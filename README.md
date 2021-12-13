@@ -1,1 +1,1 @@
-# course_debug
+# Curso Troubleshooting and Debugging Techniques
