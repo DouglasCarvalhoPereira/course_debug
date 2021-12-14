@@ -1,0 +1,140 @@
+execve("./execute.py", ["./execute.py"], 0x7ffcb355d4b0 /* 21 vars */) = 0
+brk(NULL)                               = 0x55cbf77d9000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffef6160380) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=30403, ...}) = 0
+mmap(NULL, 30403, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8730cce000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8730ccc000
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8730ada000
+mprotect(0x7f8730aff000, 1847296, PROT_NONE) = 0
+mmap(0x7f8730aff000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7f8730aff000
+mmap(0x7f8730c77000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7f8730c77000
+mmap(0x7f8730cc2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f8730cc2000
+mmap(0x7f8730cc8000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8730cc8000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7f8730ccd580) = 0
+mprotect(0x7f8730cc2000, 12288, PROT_READ) = 0
+mprotect(0x55cbf6e39000, 4096, PROT_READ) = 0
+mprotect(0x7f8730d03000, 4096, PROT_READ) = 0
+munmap(0x7f8730cce000, 30403)           = 0
+brk(NULL)                               = 0x55cbf77d9000
+brk(0x55cbf77fa000)                     = 0x55cbf77fa000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3035952, ...}) = 0
+mmap(NULL, 3035952, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87307f4000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2996, ...}) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=252, ...}) = 0
+mmap(NULL, 252, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8730d02000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=27002, ...}) = 0
+mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7f8730ccf000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23, ...}) = 0
+mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8730cce000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=47, ...}) = 0
+mmap(NULL, 47, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87307f3000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=131, ...}) = 0
+mmap(NULL, 131, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87307f2000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=62, ...}) = 0
+mmap(NULL, 62, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87307f1000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=34, ...}) = 0
+mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87307f0000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=48, ...}) = 0
+mmap(NULL, 48, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87307ef000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=270, ...}) = 0
+mmap(NULL, 270, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87307ee000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1518110, ...}) = 0
+mmap(NULL, 1518110, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f873067b000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3360, ...}) = 0
+mmap(NULL, 3360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f873067a000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
+mmap(NULL, 50, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8730679000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=201272, ...}) = 0
+mmap(NULL, 201272, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8730647000
+close(3)                                = 0
+execve("/usr/local/sbin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/local/bin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/sbin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/sbin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/bin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/games/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/local/games/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/lib/wsl/lib/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2021.825.0_x64__79rhkp1fndgsc/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS//python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS//python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/WINDOWS/system32/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/WINDOWS/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/WINDOWS/System32/Wbem/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0//python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/WINDOWS/System32/OpenSSH//python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Program Files/Git/cmd/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Program Files/Git LFS/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Users/dougl/AppData/Local/Microsoft/WindowsApps/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/mnt/c/Users/dougl/AppData/Local/Programs/Microsoft VS Code/bin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+execve("/snap/bin/python3\r", ["python3\r", "./execute.py"], 0x7ffef6160478 /* 21 vars */) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/C.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/C.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/C/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/C.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/C.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/C/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+write(2, "/usr/bin/env: ", 14)          = 14
+write(2, "\342\200\230python3\\r\342\200\231", 15) = 15
+openat(AT_FDCWD, "/usr/share/locale/C.UTF-8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/C.utf8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/C/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/C.UTF-8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/C.utf8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/C/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+write(2, ": No such file or directory", 27) = 27
+write(2, "\n", 1)                       = 1
+close(1)                                = 0
+close(2)                                = 0
+exit_group(127)                         = ?
++++ exited with 127 +++
