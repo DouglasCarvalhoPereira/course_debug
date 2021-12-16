@@ -33,3 +33,9 @@ Strace - Ferramenta de rastreamento profundo do que o programa está fazendo.
 
 ### Windows
 Event Viewer
+
+## Etapas do processo:
+
+#### Obter informações
+#### Encontrar a Raiz do Problema
+#### Eimplementar Correções
