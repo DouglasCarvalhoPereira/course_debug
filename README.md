@@ -48,10 +48,52 @@ Event Viewer
 - http://brendangregg.com/usemethod.html
 
 Activity Monitor in Mac:
+
 Performance Monitor on Windows
 
 - https://www.digitalcitizen.life/how-use-resource-monitor-windows-7
 - https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
 - https://en.wikipedia.org/wiki/Cache_(computing)
 - https://www.reddit.com/r/linux/comments/d7hx2c/why_nice_levels_are_a_placebo_and_have_been_for_a/
+
+
+### Analisar a velocidade de um script
+
+Um sistemas está muito lento por exemplo envio de emails, armazenamento e gerenciamento de arquivos automaticamente e etc.
+
+Vamos analisar o tempo de execução desse sistema e descobrir o significa lento, ou seja qual parte do sistema está lenta.
+
+Como a lentidão é no "Envio" dos emails, trata-se de um problema no script, então análisamos o código python e executamos com parâmetros teste para testar a velocidade do software.
+
+##### Tolls
+
+- time
+
+Ex.: 
+$ time ./send_reminders.py "2020-01-13|Example|teste1"
+
+Retorno do sistema
+1. real 0m0.129s
+    - Quantidade de tempo real que levou para executar o comando(Wall-clock time).
+
+2. user 0m0.068s
+    - Tempo gasto executando operações no espaço do usuário.
+
+3. sys  0m0.013s
+    - Tempo gasto fazendo operações no nível do sistema(Valor pode ser enviesado por ter outros apps em execução no computador).
+
+### Para detalhar melhor o problema ou o que está deixando mais lento o sistema, usaremos o PROFILER
+
+- profile3
+
+###### command
+
+$ pprofile3 -f callgrind -o profile.out ./send_reminders.py "2020-01-13|Example|teste1"
+
+Foi gerado um arquivo com informações que podemos abrir em qualquer ferramenta com suporte ao formato grand call.
+
+Nesse caso usaremos o ###### kcachegrind
+
+Após identificar o ponto que consome mais tempo otimizamos o código.
+
 
