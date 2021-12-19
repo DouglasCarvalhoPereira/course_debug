@@ -96,4 +96,12 @@ Nesse caso usaremos o ###### kcachegrind
 
 Após identificar o ponto que consome mais tempo otimizamos o código.
 
+### Simultaneadade para otimizar o funcionamento do código
 
+Simultaneidade para melhorar nossos programas. Mais detalhes sobre as diferentes maneiras de usar a simultaneidade em Python.
+
+Links a seguir para obter mais informações:
+
+https://realpython.com/python-concurrency/
+
+https://hackernoon.com/threaded-asynchronous-magic-and-how-to-wield-it-bba9ed602c32
