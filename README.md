@@ -105,3 +105,50 @@ Links a seguir para obter mais informações:
 https://realpython.com/python-concurrency/
 
 https://hackernoon.com/threaded-asynchronous-magic-and-how-to-wield-it-bba9ed602c32
+
+Multiprocessameto por CPU
+
+### Verificar saúde da memória RAM memtest86
+
+Para verificar a memório RAM do computador podemos usar o memtest86 que irá procurar por erros.
+Deve ser executado ao inciar o sistema operacional a fim de de ter acesso a toda memória disponível 
+e verificar se os dados gravados na memório são os mesmos de quando tenta le-lo de novo.
+
+### Acompanhar o que um programa está fazendo
+
+Quando não tivermos acesso aos logs do sistema ou identificar o erro podemos monitorar o que a aplicação está fazendo por exemplo abrir um diretório, se conectar com a rede ou deletar algo usando as ferramentas abaixo.
+
+###### Linux
+ - strace
+
+###### MacOS
+ - dtruss
+
+###### Linux
+ - Process Monitor
+
+
+### Escrever script que pré-processa os dados e atua na/como PROXY
+
+##### - wrapper
+
+Função ou programa que fornece uma camada de compatibilidade entre duas funções ou programas para que eles possam trabalhar bem juntos.
+
+Usado quando os formatos de entrada e saída não correspondem.
+
+###### Watchdog
+
+Script que verifica o funcionamento do programa com frequência e caso de algum erro que o pare o própio script o reinica para garantir o funcionamento do serviço.
+
+
+#### Identificar problemas no código relacionados a memória e outros no LINUX E MACOS
+
+##### valgrind
+
+## No wWindows
+
+podemos o Dr Memory
+
+# DEPURADOR PYTHON DE LINHA DE COMANDO
+
+### pdb3
